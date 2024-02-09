@@ -1,0 +1,38 @@
+{
+  "metrics-server": {
+    "port": 6070,
+    "addr": "0.0.0.0"
+  },
+  "chain": {
+    "info-json": "[{\"chain-id\":472382,\"parent-chain-id\":11155111,\"chain-name\":\"align-testnet\",\"chain-config\":{\"chainId\":472382,\"homesteadBlock\":0,\"daoForkBlock\":null,\"daoForkSupport\":true,\"eip150Block\":0,\"eip150Hash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"eip155Block\":0,\"eip158Block\":0,\"byzantiumBlock\":0,\"constantinopleBlock\":0,\"petersburgBlock\":0,\"istanbulBlock\":0,\"muirGlacierBlock\":0,\"berlinBlock\":0,\"londonBlock\":0,\"clique\":{\"period\":0,\"epoch\":0},\"arbitrum\":{\"EnableArbOS\":true,\"AllowDebugPrecompiles\":false,\"DataAvailabilityCommittee\":false,\"InitialArbOSVersion\":10,\"InitialChainOwner\":\"0xdce9bb833e5f297089a9431dd4b24c2f21d871f1\",\"GenesisBlockNum\":0}},\"rollup\":{\"bridge\":\"0x95867512F0DedD904568EA3ee7D986aCcA44a8aa\",\"inbox\":\"0xE703F94f4eA3b17b180d9F58e4D2fE6CB1408dBE\",\"sequencer-inbox\":\"0x9C109268a551454485cccfcFF93e7001046c6E74\",\"rollup\":\"0xd69eaCFE5c64595bB8902bDF8F81E1BBf56153A3\",\"validator-utils\":\"0xE6b83B5b83BbF4Ee578c316756717d01Ebbb2079\",\"validator-wallet-creator\":\"0x761aDFED7f31ce28812713d814DfEA5E09b7a0b1\",\"deployed-at\":5235458}}]",
+    "name": "align-testnet",
+    "id": 472382
+  },
+  "parent-chain": {
+    "connection": {
+      "url": "https://eth-sepolia.g.alchemy.com/v2/dkwiUhkDdwFWknfVaY3BAse4eWVFSG3B"
+    }
+  },
+  "http": {
+    "addr": "0.0.0.0",
+    "port": 8449,
+    "vhosts": "*",
+    "corsdomain": "*",
+    "api": ["eth", "net", "web3", "arb", "debug", "txpool"]
+  },
+  "node": {
+    "forwarding-target": "https://align-testnet.rpc.caldera.xyz/http",
+    "feed": {
+      "input": {
+        "url": "wss://align-testnet.rpc.caldera.xyz/feed"
+      },
+      "output": {
+        "addr": "0.0.0.0",
+        "port": 9642
+      }
+    },
+    "caching": {
+      "archive": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  nitro:
+    image: offchainlabs/nitro-node:v2.1.3-e815395
+    volumes:
+      - "./config:/home/user/.arbitrum"
+    command: --conf.file /home/user/.arbitrum/nodeConfig.json
